@@ -122,11 +122,11 @@ _convert_engine_dir = os.path.join(exe_path_recursive)
 
 (_root, _dirs, _files) = os.walk(_search_base_dir).next()
 
-# loop through all the top level sub folders (names) under Rawdatafiles folder
+# loop through all the top level sub folders under pre_path_recursive folder
 
 for _candidate_dir in _dirs:
 
-    # if the folder has a name starting with RDOC_, then we are going to convert
+    # if the folder has a name starting with config_recursive_pattern_trim, then we are going to convert
 
     if _candidate_dir.startswith('config_recursive_pattern_trim'):
 
